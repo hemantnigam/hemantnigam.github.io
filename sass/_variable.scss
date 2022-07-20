@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Epilogue';
+  src: url("../fonts/epilogue.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Epilogue-Light';
+  src: url("../fonts/epilogue-light.ttf") format("truetype");
+}
+
+$font-size: 16px;
+$font-family-regular: 'Epilogue', sans-serif;
+$font-family-light: 'Epilogue-Light', sans-serif;
+
+$themes: (
+  light: (
+    bg-color: rgb(237, 237, 237),
+    nav-bg-color: rgb(218,218,218),
+    primary-color: rgb(106, 106, 106),
+    secondary-color: rgb(55, 55, 55),
+    tertiary-color: rgb(181, 181, 181),
+    hover-color: rgb(69, 69, 69),
+    github: url('../assets/github-light.svg'),
+    link: url('../assets/link-dark.svg'),
+    introduction-image: url('../assets/light-hero.png'),
+    logo-image: url('../assets/logo-dark.svg'),
+    theme-button: url('../assets/moon.svg')
+    ),
+    dark: (
+      bg-color: rgb(23, 23, 23),
+      nav-bg-color: rgb(41,41,41),
+      primary-color: rgb(143, 143, 143),
+      secondary-color: rgb(237, 237, 237),
+      tertiary-color: rgb(106, 106, 106),
+      hover-color: rgb(181, 181, 181),
+      github: url('../assets/github-dark.svg'),
+      link: url('../assets/link-light.svg'),
+      introduction-image: url('../assets/dark-hero.png'),
+      logo-image: url('../assets/logo-light.svg'),
+      theme-button: url('../assets/sun.svg')
+  )
+);
+
+$logo-size: 40px;
+$profile-size: 500px;
+
+@mixin themify( $themes: $themes ) {
+  @each $theme, $map in $themes {
+
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+
+      @content;
+      $theme-map: null !global;
+    }
+
+  }
+}
+
+@function themed( $key ) {
+  @return map-get( $theme-map, $key );
+}
+

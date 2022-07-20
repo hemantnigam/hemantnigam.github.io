@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/logo-dark.svg" type="image/svg" />
+    <title>Hemant Nigam - Front-end developer</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo"></div>
+          <div class="nav-icon">
+            <svg fill="none" viewBox="0 0 24 24" class="h-8 w-8"><path stroke-linecap="square" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7" pathLength="1" stroke-dashoffset="0px" stroke-dasharray="1px 1px"></path></svg>
+          </div>
+          <div class="list-container">
+            <div class="close-icon">
+              <svg fill="none" viewBox="0 0 24 24" class="h-8 w-8"><path stroke-linecap="square" stroke-width="1.5" d="M6 18L18 6M6 6l12 12" pathLength="1" stroke-dashoffset="0px" stroke-dasharray="1px 1px"></path></svg>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-list__item">
+                <a class="anchor-link" href="#introduction">Introduction</a>
+              </li>
+              <li class="menu-list__item">
+                <a class="anchor-link" href="#about">About</a>
+              </li>
+              <li class="menu-list__item">
+                <a class="anchor-link" href="#experience">Experience</a>
+              </li>
+              <li class="menu-list__item">
+                <a class="anchor-link" href="#projects">Projects</a>
+              </li>
+              <li class="menu-list__item">
+                <a class="anchor-link" href="#contact">Contact</a>
+              </li>
+              <li id="theme-toggle" class="menu-list__item theme-toggle"></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section id="introduction" class="introduction">
+          <div class="introduction__content">
+            <div class="introduction__content__name-label">Hi, My name is</div>
+            <div class="introduction__content__name">Hemant Nigam</div>
+            <div class="introduction__content__heading">
+              I build things for the web.
+            </div>
+            <div class="introduction__content__subheading">
+              I'm a full-time front-end developer with a passion for great
+              design and user experiences.
+            </div>
+            <div class="introduction__content__about-me-link">
+              <a href="#about" class="anchor-link"
+                ><span>More about me</span
+                ><span class="arrow">
+                  <svg
+                    stroke-width="0"
+                    viewBox="0 0 16 16"
+                    class="rotate-45 text-dark-200 transition duration-300 ease-in-out group-hover:translate-x-1 group-hover:translate-y-1 group-hover:text-dark-300 dark:text-dark-400"
+                    height="36"
+                    width="36"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9 13.887l5-5V8.18l-5-5-.707.707 4.146 4.147H2v1h10.44L8.292 13.18l.707.707z"
+                    ></path>
+                  </svg> </span
+              ></a>
+            </div>
+          </div>
+          <div class="introduction__cover-image"></div>
+        </section>
+        <section id="about" class="about">
+          <div class="divider">
+            <div class="divider__label">About me</div>
+            <div class="divider__line"></div>
+          </div>
+          <div class="about__container">
+            <div class="about__container__details">
+              <div class="about__container__details__about-me">
+                <div class="about__container__details__about-me__label">Who am I</div>
+                <div class="about__container__details__about-me__description">
+                  <p>
+                    Hello! My Name is Hemant Nigam. I am 27 years old, I live in
+                    Delhi, India, and I enjoy creating things that live on the
+                    internet.
+                  </p>
+                  <p>
+                    I have serious passion for UI effects, animations and creating
+                    intuitive, dynamic user experiences.
+                  </p>
+                  <p>
+                    I enjoy the constant change in the technologies used in the
+                    area and love diving into new frameworks and technologies.
+                  </p>
+                  <p>
+                    Spending time customizing, improving and tinkering with my
+                    work environment and tools is something I enjoy a lot, as it
+                    is something I use for many hours daily. It allows me to have
+                    it exactly as I desire.
+                  </p>
+                </div>
+              </div>
+              <div class="about__container__details__profile">
+                <img src="./assets/profile.png" />
+                <div class="about__container__details__profile__overlay"></div>
+              </div>
+            </div>
+            <div class="about__container__skills">
+              <div
+                class="about__container__skills__label about__container__skills__tech"
+              >
+                Tech I enjoy
+              </div>
+              <div class="about__container__skills__list">
+                <img src="./assets/html.svg" />
+                <img src="./assets/css3.svg" />
+                <img src="./assets/javascript.svg" />
+                <img src="./assets/react.svg" />
+                <img src="./assets/redux.svg" />
+                <img src="./assets/ember.svg" />
+                <img src="./assets/angular.svg" />
+                <img src="./assets/typescript.svg" />
+                <img src="./assets/vue-js.svg" />
+                <img src="./assets/npm.svg" />
+                <img src="./assets/git.svg" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="experience" class="experience">
+          <div class="divider">
+            <div class="divider__label">Where I've worked</div>
+            <div class="divider__line"></div>
+          </div>
+          <div class="experience__container">
+            <nav class="experience__container__nav">
+              <ul class="experience__container__nav__list">
+                <li class="experience__container__nav__list__item">
+                  <input
+                    type="radio"
+                    name="experience"
+                    id="ciena"
+                    checked
+                    value="1"
+                  />
+                  <label for="ciena">Ciena</label>
+                </li>
+                <li class="experience__container__nav__list__item">
+                  <input
+                    type="radio"
+                    name="experience"
+                    id="nagarro"
+                    value="2"
+                  />
+                  <label for="nagarro">Nagarro</label>
+                </li>
+                <li class="experience__container__nav__list__item">
+                  <input
+                    type="radio"
+                    name="experience"
+                    id="accenture"
+                    value="3"
+                  />
+                  <label for="accenture">Accenture</label>
+                </li>
+              </ul>
+            </nav>
+            <div class="experience__container__description">
+              <div class="experience__container__description__title">
+                <span>UI Engineer 2</span><span>@</span
+                ><span
+                  ><a href="https://www.ciena.com/" target="_blank"
+                    >Ciena</a
+                  ></span
+                >
+              </div>
+              <div class="experience__container__description__subtitle">
+                June 2021 - Present
+              </div>
+              <ul class="experience__container__description__list">
+                <li
+                  data-icon="►"
+                  class="experience__container__description__list__item"
+                >
+                  Bringing mock-ups to life using Ember components that are
+                  reusable and performant.
+                </li>
+                <li
+                  data-icon="►"
+                  class="experience__container__description__list__item"
+                >
+                  Owns the responsibility of managing and handling modules and
+                  repositories.
+                </li>
+                <li
+                  data-icon="►"
+                  class="experience__container__description__list__item"
+                >
+                  Proactively contributing in reviewing and approving the UI
+                  code PRs.
+                </li>
+                <li
+                  data-icon="►"
+                  class="experience__container__description__list__item"
+                >
+                  Participating in high level design (HLD) discussion of epic
+                  requirements.
+                </li>
+              </ul>
+            </div>
+            <div class="experience__container__description">
+              <div class="experience__container__description__title">
+                <span>Senior Frontend Engineer</span><span>@</span
+                ><span
+                  ><a href="https://www.nagarro.com/" target="_blank"
+                    >Nagarro</a
+                  ></span
+                >
+              </div>
+              <div class="experience__container__description__subtitle">
+                August 2019 - May 2021
+              </div>
+              <ul class="experience__container__description__list">
+                <li
+                  data-icon="►"
+                  class="experience__container__description__list__item"
+                >
+                  Build reusable and scalable components using React and
+                  Angular.
+                </li>
+                <li
+                  data-icon="►"
+                  class="experience__container__description__list__item"
+                >
+                  Extensive use of Redux and React Router.
+                </li>
+                <li
+                  data-icon="►"
+                  class="experience__container__description__list__item"
+                >
+                  Created responsive and attractive graphs using ECharts and
+                  chart.js library.
+                </li>
+                <li
+                  data-icon="►"
+                  class="experience__container__description__list__item"
+                >
+                  Optimized web apps performance using Lighthouse and rectifying
+                  front-end-related issues.
+                </li>
+                <li
+                  data-icon="►"
+                  class="experience__container__description__list__item"
+                >
+                  Assisted the backend developer on ongoing development
+                  projects.
+                </li>
+              </ul>
+            </div>
+            <div class="experience__container__description">
+              <div class="experience__container__description__title">
+                <span>Frontend Engineer</span><span>@</span
+                ><span
+                  ><a href="https://www.accenture.com/" target="_blank"
+                    >Accenture</a
+                  ></span
+                >
+              </div>
+              <div class="experience__container__description__subtitle">
+                February 2019 - July 2019
+              </div>
+              <ul class="experience__container__description__list">
+                <li
+                  data-icon="►"
+                  class="experience__container__description__list__item"
+                >
+                  Build reusable and interactive web component using React and
+                  Vue.
+                </li>
+                <li
+                  data-icon="►"
+                  class="experience__container__description__list__item"
+                >
+                  Implement complex data table component using Ag-Grid and
+                  Handsontable library.
+                </li>
+                <li
+                  data-icon="►"
+                  class="experience__container__description__list__item"
+                >
+                  Build resizable and draggable web components using Gridster.js
+                  library.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="projects" class="projects">
+          <div class="divider">
+            <div class="divider__label">Projects</div>
+            <div class="divider__line"></div>
+          </div>
+          <div class="projects__container">
+            <div class="projects__container__item">
+              <div class="projects__container__item__description">
+                <div class="projects__container__item__description__title">
+                  React Search Auto Complete
+                </div>
+                <div class="projects__container__item__description__content">
+                  React Search Autocomplete is a react package for search
+                  component. It provides customizable and many other functional
+                  features like highlight search, debouncing, server data
+                  rendering etc. It is deployed on npm.
+                </div>
+                <div class="projects__container__item__description__techs">
+                  <img src="./assets/html.svg" alt="no icon found" />
+                  <img src="./assets/css3.svg" alt="no icon found" />
+                  <img src="./assets/javascript.svg" alt="no icon found" />
+                  <img src="./assets/react.svg" alt="no icon found" />
+                  <img src="./assets/npm.svg" alt="no icon found" />
+                  <img src="./assets/git.svg" alt="no icon found" />
+                </div>
+                <div class="projects__container__item__description__links">
+                  <a
+                    href="https://www.npmjs.com/package/@hemantnigam/react-search-autocomplete"
+                    target="_blank"
+                  >
+                    <button>
+                      <div>View it here</div>
+                      <div class="link external-link"></div>
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/hemantnigam/react-search-autocomplete"
+                    target="_blank"
+                  >
+                    <button>
+                      <div>View Github Repo</div>
+                      <div class="link external-link"></div>
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="projects__container__item__screenshot">
+                <img src="./assets/search.png" alt="no image found" />
+              </div>
+            </div>
+
+            <div class="projects__container__item">
+              <div class="projects__container__item__description">
+                <div class="projects__container__item__description__title">
+                  YT Downloader
+                </div>
+                <div class="projects__container__item__description__content">
+                  A web app for downloading audios, videos and whole playlist
+                  from youtube. This application supports various audio and
+                  video formats for download.
+                </div>
+                <div class="projects__container__item__description__techs">
+                  <img src="./assets/html.svg" alt="no icon found" />
+                  <img src="./assets/css3.svg" alt="no icon found" />
+                  <img src="./assets/javascript.svg" alt="no icon found" />
+                  <img src="./assets/react.svg" alt="no icon found" />
+                  <img src="./assets/git.svg" alt="no icon found" />
+                </div>
+                <div class="projects__container__item__description__links">
+                  <a href="https://yt-download.netlify.app/" target="_blank">
+                    <button>
+                      <div>View it here</div>
+                      <div class="link external-link"></div>
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/hemantnigam/yt_downloader_frontend"
+                    target="_blank"
+                  >
+                    <button>
+                      <div>View Github Repo</div>
+                      <div class="link external-link"></div>
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="projects__container__item__screenshot">
+                <img src="./assets/youtube.png" alt="no image found" />
+              </div>
+            </div>
+
+            <div class="projects__container__item">
+              <div class="projects__container__item__description">
+                <div class="projects__container__item__description__title">
+                  Daily Reads
+                </div>
+                <div class="projects__container__item__description__content">
+                  A medium clone where user can read and write articles. User
+                  can also bookmark and comment on other user’s articles. This
+                  application is developed using conduit open source api.
+                </div>
+                <div class="projects__container__item__description__techs">
+                  <img src="./assets/html.svg" alt="no icon found" />
+                  <img src="./assets/css3.svg" alt="no icon found" />
+                  <img src="./assets/javascript.svg" alt="no icon found" />
+                  <img src="./assets/react.svg" alt="no icon found" />
+                  <img src="./assets/git.svg" alt="no icon found" />
+                </div>
+                <div class="projects__container__item__description__links">
+                  <a href="https://readarticles.netlify.app/" target="_blank">
+                    <button>
+                      <div>View it here</div>
+                      <div class="link external-link"></div>
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/hemantnigam/medium-clone"
+                    target="_blank"
+                  >
+                    <button>
+                      <div>View Github Repo</div>
+                      <div class="link external-link"></div>
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="projects__container__item__screenshot">
+                <img src="./assets/daily_reads.png" alt="no image found" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="contact">
+          <div class="divider">
+            <div class="divider__label">Contact</div>
+            <div class="divider__line"></div>
+          </div>
+          <div class="contact__container">
+            <div class="contact__container__heading">Get In Touch</div>
+            <div class="contact__container__btn">
+              <button>
+                <a href="mailto: h.nigam654@gmail.com">Say Hello</a>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="social link">
+          <a href="https://github.com/hemantnigam">Github</a>
+        </div>
+        <div class="social link">
+          <a href="https://www.linkedin.com/in/hemantnigam">Linkedin</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

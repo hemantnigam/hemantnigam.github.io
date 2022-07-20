@@ -1,0 +1,969 @@
+@font-face {
+  font-family: "Epilogue";
+  src: url("../fonts/epilogue.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Epilogue-Light";
+  src: url("../fonts/epilogue-light.ttf") format("truetype");
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+  font-size: 16px;
+  transition: background-color 0.5s ease;
+}
+.theme-light body {
+  background-color: rgb(237, 237, 237);
+}
+.theme-dark body {
+  background-color: rgb(23, 23, 23);
+}
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.theme-light body::-webkit-scrollbar-track {
+  background-color: rgb(237, 237, 237);
+}
+.theme-dark body::-webkit-scrollbar-track {
+  background-color: rgb(23, 23, 23);
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+.theme-light body::-webkit-scrollbar-thumb {
+  background-color: rgb(106, 106, 106);
+}
+.theme-dark body::-webkit-scrollbar-thumb {
+  background-color: rgb(143, 143, 143);
+}
+body .container {
+  min-height: 100vh;
+  margin: 0px 200px;
+}
+body .container header {
+  padding: 40px 0px;
+}
+body .container header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Epilogue-Light", sans-serif;
+}
+body .container header nav .logo {
+  background-size: 40px 40px;
+  height: 40px;
+  width: 40px;
+}
+.theme-light body .container header nav .logo {
+  background-image: url("../assets/logo-dark.svg");
+}
+.theme-dark body .container header nav .logo {
+  background-image: url("../assets/logo-light.svg");
+}
+body .container header nav .nav-icon {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+.theme-light body .container header nav .nav-icon svg {
+  stroke: rgb(55, 55, 55);
+}
+.theme-dark body .container header nav .nav-icon svg {
+  stroke: rgb(237, 237, 237);
+}
+.theme-light body .container header nav .nav-icon svg:hover {
+  stroke: rgb(106, 106, 106);
+}
+.theme-dark body .container header nav .nav-icon svg:hover {
+  stroke: rgb(143, 143, 143);
+}
+@media screen and (min-width: 917px) {
+  body .container header nav .nav-icon {
+    display: none;
+  }
+}
+body .container header nav .list-container .close-icon {
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  display: none;
+}
+.theme-light body .container header nav .list-container .close-icon {
+  stroke: rgb(55, 55, 55);
+}
+.theme-dark body .container header nav .list-container .close-icon {
+  stroke: rgb(237, 237, 237);
+}
+.theme-light body .container header nav .list-container .close-icon:hover {
+  stroke: rgb(106, 106, 106);
+}
+.theme-dark body .container header nav .list-container .close-icon:hover {
+  stroke: rgb(143, 143, 143);
+}
+body .container header nav .list-container .menu-list {
+  display: flex;
+}
+body .container header nav .list-container .menu-list__item {
+  height: 20px;
+  list-style-type: none;
+  margin: 0px 30px;
+}
+body .container header nav .list-container .menu-list__item a {
+  text-decoration: none;
+}
+body .container header nav .list-container .menu-list__item a::after {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  width: 0px;
+  height: 1px;
+}
+.theme-light body .container header nav .list-container .menu-list__item a::after {
+  background-color: rgb(106, 106, 106);
+}
+.theme-dark body .container header nav .list-container .menu-list__item a::after {
+  background-color: rgb(143, 143, 143);
+}
+.theme-light body .container header nav .list-container .menu-list__item a:hover {
+  color: rgb(55, 55, 55);
+}
+.theme-dark body .container header nav .list-container .menu-list__item a:hover {
+  color: rgb(237, 237, 237);
+}
+body .container header nav .list-container .menu-list__item a:hover::after {
+  content: "";
+  width: 100%;
+  transition: width 0.2s ease;
+}
+.theme-light body .container header nav .list-container .menu-list__item a {
+  color: rgb(106, 106, 106);
+}
+.theme-dark body .container header nav .list-container .menu-list__item a {
+  color: rgb(143, 143, 143);
+}
+@media screen and (max-width: 917px) {
+  body .container header nav .list-container .menu-list__item a {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 917px) {
+  body .container header nav .list-container .menu-list__item {
+    margin: 30px;
+    align-self: start;
+  }
+}
+body .container header nav .list-container .menu-list .theme-toggle {
+  background-size: 20px;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  bottom: 3px;
+  cursor: pointer;
+}
+.theme-light body .container header nav .list-container .menu-list .theme-toggle {
+  background-image: url("../assets/moon.svg");
+}
+.theme-dark body .container header nav .list-container .menu-list .theme-toggle {
+  background-image: url("../assets/sun.svg");
+}
+@media screen and (max-width: 917px) {
+  body .container header nav .list-container .menu-list {
+    flex-direction: column;
+    padding: 50px 0px 0px 0px;
+  }
+}
+@media screen and (max-width: 917px) {
+  body .container header nav .list-container {
+    position: absolute;
+    margin: 0px;
+    top: 0;
+    right: -50px;
+    height: 100vh;
+    width: 0px;
+    z-index: 99999;
+    width: 80%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    align-items: center;
+  }
+  .theme-light body .container header nav .list-container {
+    background-color: rgb(218, 218, 218);
+  }
+  .theme-dark body .container header nav .list-container {
+    background-color: rgb(41, 41, 41);
+  }
+}
+body .container header nav .show-navbar {
+  transform: translateX(-50px);
+  transition: transform 0.3s ease;
+}
+body .container main {
+  margin: 100px 0px;
+}
+.theme-light body .container main {
+  color: rgb(106, 106, 106);
+}
+.theme-dark body .container main {
+  color: rgb(143, 143, 143);
+}
+body .container main .divider {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+body .container main .divider__label {
+  font-size: 0.9rem;
+}
+.theme-light body .container main .divider__label {
+  color: rgb(181, 181, 181);
+}
+.theme-dark body .container main .divider__label {
+  color: rgb(106, 106, 106);
+}
+body .container main .divider__line {
+  width: 100%;
+  height: 0.5px;
+  margin-left: 30px;
+  flex: 1;
+}
+.theme-light body .container main .divider__line {
+  background-color: rgb(181, 181, 181);
+}
+.theme-dark body .container main .divider__line {
+  background-color: rgb(106, 106, 106);
+}
+body .container main .introduction {
+  box-sizing: border-box;
+  display: flex;
+  height: calc(100vh - 230px);
+  position: relative;
+}
+body .container main .introduction__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  z-index: 9999;
+}
+body .container main .introduction__content__name-label {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.theme-light body .container main .introduction__content__name-label {
+  color: rgb(69, 69, 69);
+}
+.theme-dark body .container main .introduction__content__name-label {
+  color: rgb(181, 181, 181);
+}
+@media screen and (max-width: 606px) {
+  body .container main .introduction__content__name-label {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 492px) {
+  body .container main .introduction__content__name-label {
+    font-size: 0.8rem;
+  }
+}
+body .container main .introduction__content__name {
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.theme-light body .container main .introduction__content__name {
+  color: rgb(55, 55, 55);
+}
+.theme-dark body .container main .introduction__content__name {
+  color: rgb(237, 237, 237);
+}
+@media screen and (max-width: 606px) {
+  body .container main .introduction__content__name {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  body .container main .introduction__content__name {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 492px) {
+  body .container main .introduction__content__name {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .container main .introduction__content__name {
+    font-size: 2.4rem;
+  }
+}
+body .container main .introduction__content__heading {
+  font-size: 4rem;
+}
+.theme-light body .container main .introduction__content__heading {
+  color: rgb(69, 69, 69);
+}
+.theme-dark body .container main .introduction__content__heading {
+  color: rgb(181, 181, 181);
+}
+@media screen and (max-width: 606px) {
+  body .container main .introduction__content__heading {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  body .container main .introduction__content__heading {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 492px) {
+  body .container main .introduction__content__heading {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .container main .introduction__content__heading {
+    font-size: 1.4rem;
+  }
+}
+body .container main .introduction__content__subheading {
+  margin-top: 50px;
+  font-size: 1.2rem;
+  font-family: "Epilogue-Light", sans-serif;
+}
+.theme-light body .container main .introduction__content__subheading {
+  color: rgb(69, 69, 69);
+}
+.theme-dark body .container main .introduction__content__subheading {
+  color: rgb(181, 181, 181);
+}
+@media screen and (max-width: 606px) {
+  body .container main .introduction__content__subheading {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 492px) {
+  body .container main .introduction__content__subheading {
+    font-size: 0.9rem;
+  }
+}
+body .container main .introduction__content__about-me-link {
+  font-size: 2rem;
+  font-family: "Epilogue-Light", sans-serif;
+  position: absolute;
+  bottom: 150px;
+  display: flex;
+  align-items: center;
+}
+body .container main .introduction__content__about-me-link a {
+  text-decoration: none;
+  display: flex;
+}
+.theme-light body .container main .introduction__content__about-me-link a {
+  color: rgb(106, 106, 106);
+}
+.theme-dark body .container main .introduction__content__about-me-link a {
+  color: rgb(143, 143, 143);
+}
+body .container main .introduction__content__about-me-link a .arrow {
+  margin-left: 10px;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+.theme-light body .container main .introduction__content__about-me-link a .arrow svg {
+  stroke: rgb(106, 106, 106);
+  fill: rgb(106, 106, 106);
+}
+.theme-dark body .container main .introduction__content__about-me-link a .arrow svg {
+  stroke: rgb(143, 143, 143);
+  fill: rgb(143, 143, 143);
+}
+body .container main .introduction__content__about-me-link a .arrow:hover {
+  transform: rotate(45deg) translate(10px, 2px);
+  transition: transform 0.2s ease;
+}
+@media screen and (max-width: 606px) {
+  body .container main .introduction__content__about-me-link {
+    font-size: 1.5rem;
+  }
+}
+body .container main .introduction__cover-image {
+  width: 100%;
+  position: relative;
+  right: 0px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+}
+.theme-light body .container main .introduction__cover-image {
+  background-image: url("../assets/light-hero.png");
+}
+.theme-dark body .container main .introduction__cover-image {
+  background-image: url("../assets/dark-hero.png");
+}
+@media screen and (max-width: 606px) {
+  body .container main .introduction__cover-image {
+    background-size: 100%;
+    background-position-x: 50px;
+    background-position-y: 50px;
+  }
+}
+@media screen and (max-width: 606px) {
+  body .container main .introduction {
+    height: calc(100vh - 100px);
+  }
+}
+body .container main .about {
+  scroll-margin-top: 100px;
+}
+body .container main .about__container {
+  padding: 100px 0px 100px 100px;
+}
+body .container main .about__container__details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1060px) {
+  body .container main .about__container__details {
+    flex-direction: column-reverse;
+  }
+}
+body .container main .about__container__details__about-me__label {
+  text-transform: uppercase;
+}
+.theme-light body .container main .about__container__details__about-me__label {
+  color: rgb(181, 181, 181);
+}
+.theme-dark body .container main .about__container__details__about-me__label {
+  color: rgb(106, 106, 106);
+}
+body .container main .about__container__details__about-me__tech {
+  margin-top: 80px;
+}
+body .container main .about__container__details__about-me__description {
+  margin: 30px 0px;
+}
+.theme-light body .container main .about__container__details__about-me__description {
+  color: rgb(69, 69, 69);
+}
+.theme-dark body .container main .about__container__details__about-me__description {
+  color: rgb(181, 181, 181);
+}
+body .container main .about__container__details__about-me__description p {
+  line-height: 2;
+  font-size: 1.1rem;
+  font-family: "Epilogue-Light", sans-serif;
+}
+body .container main .about__container__details__profile img {
+  height: auto;
+  width: 500px;
+}
+@media screen and (max-width: 500px) {
+  body .container main .about__container__details__profile img {
+    width: 100%;
+  }
+}
+body .container main .about__container__skills__list {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+body .container main .about__container__skills__list img {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 520px) {
+  body .container main .about__container__skills__list {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  body .container main .about__container {
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 650px) {
+  body .container main .about__container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+body .container main .experience {
+  scroll-margin-top: 100px;
+}
+body .container main .experience__container {
+  padding: 100px 0px 100px 160px;
+  height: 350px;
+}
+body .container main .experience__container__nav__list {
+  display: flex;
+  font-family: "Epilogue-Light", sans-serif;
+  font-size: 1.2rem;
+  padding: 0px;
+}
+body .container main .experience__container__nav__list__item {
+  list-style: none;
+  margin: 10px 20px 10px 0px;
+  cursor: pointer;
+}
+.theme-light body .container main .experience__container__nav__list__item:hover {
+  color: rgb(69, 69, 69);
+}
+.theme-dark body .container main .experience__container__nav__list__item:hover {
+  color: rgb(181, 181, 181);
+}
+body .container main .experience__container__nav__list__item input {
+  display: none;
+}
+.theme-light body .container main .experience__container__nav__list__item input:checked ~ label {
+  color: rgb(69, 69, 69);
+}
+.theme-dark body .container main .experience__container__nav__list__item input:checked ~ label {
+  color: rgb(181, 181, 181);
+}
+body .container main .experience__container__nav__list__item input:checked ~ label::after {
+  content: "";
+  width: 100%;
+  transition: width 0.2s ease;
+}
+body .container main .experience__container__nav__list__item label {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+body .container main .experience__container__nav__list__item label::after {
+  content: "";
+  height: 1px;
+  width: 0px;
+  margin-top: 5px;
+  transition: width 0.2s ease;
+}
+.theme-light body .container main .experience__container__nav__list__item label::after {
+  background-color: rgb(106, 106, 106);
+}
+.theme-dark body .container main .experience__container__nav__list__item label::after {
+  background-color: rgb(143, 143, 143);
+}
+body .container main .experience__container__description {
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  transition: opacity 1s ease;
+}
+.theme-light body .container main .experience__container__description {
+  color: rgb(69, 69, 69);
+}
+.theme-dark body .container main .experience__container__description {
+  color: rgb(181, 181, 181);
+}
+body .container main .experience__container__description__title {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+}
+.theme-light body .container main .experience__container__description__title {
+  color: rgb(55, 55, 55);
+}
+.theme-dark body .container main .experience__container__description__title {
+  color: rgb(237, 237, 237);
+}
+body .container main .experience__container__description__title span {
+  margin-right: 5px;
+}
+.theme-light body .container main .experience__container__description__title span:nth-child(2) {
+  color: rgb(106, 106, 106);
+}
+.theme-dark body .container main .experience__container__description__title span:nth-child(2) {
+  color: rgb(143, 143, 143);
+}
+body .container main .experience__container__description__subtitle {
+  margin-top: 10px;
+}
+body .container main .experience__container__description__list {
+  font-family: "Epilogue-Light", sans-serif;
+}
+body .container main .experience__container__description__list__item {
+  list-style: none;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+body .container main .experience__container__description__list__item::before {
+  content: attr(data-icon);
+  font-size: 10px;
+  margin-right: 10px;
+}
+body .container main .experience__container__description a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+.theme-light body .container main .experience__container__description a {
+  color: rgb(106, 106, 106);
+}
+.theme-dark body .container main .experience__container__description a {
+  color: rgb(143, 143, 143);
+}
+body .container main .experience__container__description a::after {
+  content: "";
+  height: 1px;
+  width: 0px;
+  transition: width 0.2s ease;
+}
+.theme-light body .container main .experience__container__description a::after {
+  background-color: rgb(69, 69, 69);
+}
+.theme-dark body .container main .experience__container__description a::after {
+  background-color: rgb(181, 181, 181);
+}
+body .container main .experience__container__description a:hover::after {
+  content: "";
+  width: 100%;
+  transition: width 0.2s ease;
+}
+@media screen and (max-width: 900px) {
+  body .container main .experience__container {
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 650px) {
+  body .container main .experience__container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .container main .experience__container {
+    height: 550px;
+  }
+}
+@media screen and (max-width: 450px) {
+  body .container main .experience__container {
+    padding-top: 50px;
+  }
+}
+body .container main .projects {
+  scroll-margin-top: 100px;
+}
+body .container main .projects__container {
+  padding: 100px;
+}
+body .container main .projects__container__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 100px;
+}
+body .container main .projects__container__item__screenshot img {
+  height: 300px;
+  width: 500px;
+}
+@media screen and (max-width: 1200px) {
+  body .container main .projects__container__item__screenshot img {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1060px) {
+  body .container main .projects__container__item__screenshot img {
+    width: 500px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 697px) {
+  body .container main .projects__container__item__screenshot img {
+    height: auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body .container main .projects__container__item__screenshot {
+    align-self: center;
+  }
+}
+body .container main .projects__container__item__description {
+  width: 400px;
+}
+body .container main .projects__container__item__description__title {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.theme-light body .container main .projects__container__item__description__title {
+  color: rgb(55, 55, 55);
+}
+.theme-dark body .container main .projects__container__item__description__title {
+  color: rgb(237, 237, 237);
+}
+@media screen and (max-width: 1200px) {
+  body .container main .projects__container__item__description__title {
+    font-size: 1.3rem;
+  }
+}
+body .container main .projects__container__item__description__content {
+  font-family: "Epilogue-Light", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.theme-light body .container main .projects__container__item__description__content {
+  color: rgb(69, 69, 69);
+}
+.theme-dark body .container main .projects__container__item__description__content {
+  color: rgb(181, 181, 181);
+}
+@media screen and (max-width: 1200px) {
+  body .container main .projects__container__item__description__content {
+    font-size: 0.9rem;
+  }
+}
+body .container main .projects__container__item__description__techs {
+  margin-bottom: 20px;
+}
+body .container main .projects__container__item__description__techs img {
+  height: 40px;
+}
+body .container main .projects__container__item__description__links {
+  display: flex;
+}
+body .container main .projects__container__item__description__links a {
+  text-decoration: none;
+}
+body .container main .projects__container__item__description__links a button {
+  height: 40px;
+  width: 150px;
+  font-size: 1rem;
+  font-family: "Epilogue", sans-serif;
+  cursor: pointer;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: width 0.2s ease;
+}
+.theme-light body .container main .projects__container__item__description__links a button {
+  background-color: rgb(106, 106, 106);
+}
+.theme-dark body .container main .projects__container__item__description__links a button {
+  background-color: rgb(143, 143, 143);
+}
+.theme-light body .container main .projects__container__item__description__links a button div {
+  color: rgb(237, 237, 237);
+}
+.theme-dark body .container main .projects__container__item__description__links a button div {
+  color: rgb(23, 23, 23);
+}
+body .container main .projects__container__item__description__links a button div:nth-child(1) {
+  min-width: 150px;
+}
+@media screen and (max-width: 450px) {
+  body .container main .projects__container__item__description__links a button div:nth-child(1) {
+    min-width: 100px;
+  }
+}
+body .container main .projects__container__item__description__links a button .link {
+  background-size: 20px;
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 25px;
+}
+.theme-light body .container main .projects__container__item__description__links a button .github-link {
+  background-image: url("../assets/github-light.svg");
+}
+.theme-dark body .container main .projects__container__item__description__links a button .github-link {
+  background-image: url("../assets/github-dark.svg");
+}
+.theme-light body .container main .projects__container__item__description__links a button .external-link {
+  background-image: url("../assets/link-dark.svg");
+}
+.theme-dark body .container main .projects__container__item__description__links a button .external-link {
+  background-image: url("../assets/link-light.svg");
+}
+@media screen and (max-width: 600px) {
+  body .container main .projects__container__item__description__links a button .external-link {
+    display: none;
+  }
+}
+body .container main .projects__container__item__description__links a button:hover {
+  width: 200px;
+  transition: width 0.2s ease;
+}
+@media screen and (max-width: 450px) {
+  body .container main .projects__container__item__description__links a button {
+    width: 100px;
+    font-size: 0.8rem;
+  }
+}
+body .container main .projects__container__item__description__links a:nth-child(1) {
+  margin-right: 50px;
+}
+@media screen and (max-width: 450px) {
+  body .container main .projects__container__item__description__links a:nth-child(2) button {
+    width: 125px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  body .container main .projects__container__item__description__links {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1060px) {
+  body .container main .projects__container__item__description {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+body .container main .projects__container__item:nth-child(odd) {
+  flex-direction: row;
+}
+body .container main .projects__container__item:nth-child(odd) .projects__container__item__description {
+  margin-right: 20px;
+}
+@media screen and (max-width: 1060px) {
+  body .container main .projects__container__item:nth-child(odd) .projects__container__item__description {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  body .container main .projects__container__item:nth-child(odd) {
+    flex-direction: column;
+  }
+}
+body .container main .projects__container__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+body .container main .projects__container__item:nth-child(even) .projects__container__item__description {
+  margin-left: 20px;
+}
+@media screen and (max-width: 1060px) {
+  body .container main .projects__container__item:nth-child(even) .projects__container__item__description {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  body .container main .projects__container__item:nth-child(even) {
+    flex-direction: column;
+  }
+}
+body .container main .projects__container__item:last-child {
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 800px) {
+  body .container main .projects__container {
+    padding: 100px 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  body .container main .projects__container {
+    padding: 100px 0px;
+  }
+}
+body .container main .contact__container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .container main .contact__container__heading {
+  font-family: "Epilogue", sans-serif;
+  font-size: 3rem;
+}
+@media screen and (max-width: 550px) {
+  body .container main .contact__container__heading {
+    font-size: 2.4rem;
+  }
+}
+body .container main .contact__container__btn {
+  margin-top: 30px;
+}
+body .container main .contact__container__btn button {
+  cursor: pointer;
+  height: 50px;
+  width: 120px;
+  border: 0px;
+  font-size: 1.1rem;
+}
+.theme-light body .container main .contact__container__btn button {
+  background-color: rgb(106, 106, 106);
+}
+.theme-dark body .container main .contact__container__btn button {
+  background-color: rgb(143, 143, 143);
+}
+body .container main .contact__container__btn button a {
+  text-decoration: none;
+}
+.theme-light body .container main .contact__container__btn button a {
+  color: rgb(237, 237, 237);
+}
+.theme-dark body .container main .contact__container__btn button a {
+  color: rgb(23, 23, 23);
+}
+@media screen and (max-width: 550px) {
+  body .container main .contact__container__btn button {
+    width: 100px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  body .container main .contact__container {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 606px) {
+  body .container main {
+    margin: 0px;
+  }
+}
+body .container footer {
+  margin: 20px 0px;
+  display: flex;
+}
+body .container footer div {
+  margin-right: 30px;
+  font-size: 1.3rem;
+}
+body .container footer div a {
+  text-decoration: none;
+}
+.theme-light body .container footer div a {
+  color: rgb(106, 106, 106);
+}
+.theme-dark body .container footer div a {
+  color: rgb(143, 143, 143);
+}
+@media screen and (max-width: 1760px) {
+  body .container {
+    margin: 0px 150px;
+  }
+}
+@media screen and (max-width: 1675px) {
+  body .container {
+    margin: 0px 100px;
+  }
+}
+@media screen and (max-width: 1540px) {
+  body .container {
+    margin: 0px 50px;
+  }
+}
+@media screen and (max-width: 917px) {
+  body .container {
+    margin: 0px 20px;
+  }
+}
+@media screen and (max-width: 917px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
