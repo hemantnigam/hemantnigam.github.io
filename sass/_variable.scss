@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Epilogue';
-  src: url("../fonts/epilogue.ttf") format("truetype");
+  src: url("/fonts/epilogue.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Epilogue-Light';
-  src: url("../fonts/epilogue-light.ttf") format("truetype");
+  src: url("/fonts/epilogue-light.ttf") format("truetype");
 }
 
 $font-size: 16px;
@@ -20,11 +20,11 @@ $themes: (
     secondary-color: rgb(55, 55, 55),
     tertiary-color: rgb(181, 181, 181),
     hover-color: rgb(69, 69, 69),
-    github: url('../assets/github-light.svg'),
-    link: url('../assets/link-dark.svg'),
-    introduction-image: url('../assets/light-hero.png'),
-    logo-image: url('../assets/logo-dark.svg'),
-    theme-button: url('../assets/moon.svg')
+    github: url('/assets/github-light.svg'),
+    link: url('/assets/link-dark.svg'),
+    introduction-image: url('/assets/light-hero.png'),
+    logo-image: url('/assets/logo-dark.svg'),
+    theme-button: url('/assets/moon.svg')
     ),
     dark: (
       bg-color: rgb(23, 23, 23),
@@ -33,11 +33,11 @@ $themes: (
       secondary-color: rgb(237, 237, 237),
       tertiary-color: rgb(106, 106, 106),
       hover-color: rgb(181, 181, 181),
-      github: url('../assets/github-dark.svg'),
-      link: url('../assets/link-light.svg'),
-      introduction-image: url('../assets/dark-hero.png'),
-      logo-image: url('../assets/logo-light.svg'),
-      theme-button: url('../assets/sun.svg')
+      github: url('/assets/github-dark.svg'),
+      link: url('/assets/link-light.svg'),
+      introduction-image: url('/assets/dark-hero.png'),
+      logo-image: url('/assets/logo-light.svg'),
+      theme-button: url('/assets/sun.svg')
   )
 );
 

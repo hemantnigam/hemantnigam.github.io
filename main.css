@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Epilogue";
-  src: url("../fonts/epilogue.ttf") format("truetype");
+  src: url("/fonts/epilogue.ttf") format("truetype");
 }
 @font-face {
   font-family: "Epilogue-Light";
-  src: url("../fonts/epilogue-light.ttf") format("truetype");
+  src: url("/fonts/epilogue-light.ttf") format("truetype");
 }
 body {
   margin: 0px;
@@ -58,10 +58,10 @@ body .container header nav .logo {
   width: 40px;
 }
 .theme-light body .container header nav .logo {
-  background-image: url("../assets/logo-dark.svg");
+  background-image: url("/assets/logo-dark.svg");
 }
 .theme-dark body .container header nav .logo {
-  background-image: url("../assets/logo-light.svg");
+  background-image: url("/assets/logo-light.svg");
 }
 body .container header nav .nav-icon {
   height: 32px;
@@ -167,10 +167,10 @@ body .container header nav .list-container .menu-list .theme-toggle {
   cursor: pointer;
 }
 .theme-light body .container header nav .list-container .menu-list .theme-toggle {
-  background-image: url("../assets/moon.svg");
+  background-image: url("/assets/moon.svg");
 }
 .theme-dark body .container header nav .list-container .menu-list .theme-toggle {
-  background-image: url("../assets/sun.svg");
+  background-image: url("/assets/sun.svg");
 }
 @media screen and (max-width: 917px) {
   body .container header nav .list-container .menu-list {
@@ -403,10 +403,10 @@ body .container main .introduction__cover-image {
   background-size: auto;
 }
 .theme-light body .container main .introduction__cover-image {
-  background-image: url("../assets/light-hero.png");
+  background-image: url("/assets/light-hero.png");
 }
 .theme-dark body .container main .introduction__cover-image {
-  background-image: url("../assets/dark-hero.png");
+  background-image: url("/assets/dark-hero.png");
 }
 @media screen and (max-width: 606px) {
   body .container main .introduction__cover-image {
@@ -776,16 +776,16 @@ body .container main .projects__container__item__description__links a button .li
   width: 25px;
 }
 .theme-light body .container main .projects__container__item__description__links a button .github-link {
-  background-image: url("../assets/github-light.svg");
+  background-image: url("/assets/github-light.svg");
 }
 .theme-dark body .container main .projects__container__item__description__links a button .github-link {
-  background-image: url("../assets/github-dark.svg");
+  background-image: url("/assets/github-dark.svg");
 }
 .theme-light body .container main .projects__container__item__description__links a button .external-link {
-  background-image: url("../assets/link-dark.svg");
+  background-image: url("/assets/link-dark.svg");
 }
 .theme-dark body .container main .projects__container__item__description__links a button .external-link {
-  background-image: url("../assets/link-light.svg");
+  background-image: url("/assets/link-light.svg");
 }
 @media screen and (max-width: 600px) {
   body .container main .projects__container__item__description__links a button .external-link {
