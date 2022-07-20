@@ -332,7 +332,7 @@ body {
               display: flex;
               align-items: center;
               justify-content: space-between;
-              @media screen and (max-width: 1060px){
+              @media screen and (max-width: 1130px){
                 flex-direction: column-reverse;
               }
             &__about-me {
@@ -543,11 +543,11 @@ body {
               img {
                 height: 300px;
                 width: 500px;
-                @media screen and (max-width: 1200px) {
-                  height: 100%;
-                  width: 100%;
+                @media screen and (max-width: 1250px) {
+                  height: 200px;
+                  width: 400px;
                 }
-                @media screen and (max-width: 1060px) {
+                @media screen and (max-width: 1130px) {
                   width: 500px;
                   height: 300px;
                 }
@@ -658,11 +658,11 @@ body {
                     }
                   }
                 }
-                @media screen and (max-width: 1060px) {
+                @media screen and (max-width: 1130px) {
                   justify-content: center;
                 }
               }
-              @media screen and (max-width: 1060px) {
+              @media screen and (max-width: 1130px) {
                 width: 100%;
                 margin-bottom: 10px;
               }
@@ -671,11 +671,11 @@ body {
               flex-direction: row;
               .projects__container__item__description {
                 margin-right: 20px;
-                @media screen and (max-width: 1060px) {
+                @media screen and (max-width: 1130px) {
                   margin-right: 0px;
                 }
               }
-              @media screen and (max-width: 1060px) {
+              @media screen and (max-width: 1130px) {
                 flex-direction: column;
               }
             }
@@ -683,11 +683,11 @@ body {
               flex-direction: row-reverse;
               .projects__container__item__description {
                 margin-left: 20px;
-                @media screen and (max-width: 1060px) {
+                @media screen and (max-width: 1130px) {
                   margin-left: 0px;
                 }
               }
-              @media screen and (max-width: 1060px) {
+              @media screen and (max-width: 1130px) {
                 flex-direction: column;
               }
             }
