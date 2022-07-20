@@ -423,7 +423,7 @@ body .container main .introduction__cover-image {
   }
 }
 body .container main .about {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 50px;
 }
 body .container main .about__container {
   padding: 100px 0px 100px 100px;
