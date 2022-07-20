@@ -20,11 +20,17 @@ function toggleNavIcon() {
   document.querySelector('.nav-icon').addEventListener('click', function (e){
     document.querySelector('.list-container').classList.add('show-navbar')
     document.querySelector('.close-icon').style.display = 'block'
+    setTimeout(()=>{
+      document.body.classList.add('overflow-hidden')
+    },0)
   })
 
   document.querySelector('.close-icon').addEventListener('click', function (e){
     document.querySelector('.list-container').classList.remove('show-navbar')
     document.querySelector('.close-icon').style.display = 'none'
+    setTimeout(()=>{
+      document.body.classList.remove('overflow-hidden')
+    },0)
   })
 }
 

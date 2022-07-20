@@ -2,6 +2,8 @@ body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  overflow-x: hidden;
+  position: relative;
   font-family: $font-family-regular;
   font-size: $font-size;
   @include themify {
@@ -778,7 +780,7 @@ body {
       margin: 0px 20px;
     }
   }
-  @media screen and (max-width: 917px) {
-    overflow-x: hidden;
-  }
+}
+.overflow-hidden {
+  overflow: hidden;
 }
