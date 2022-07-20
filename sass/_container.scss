@@ -631,6 +631,9 @@ body {
                       @include themify {
                         background-image: themed("github");
                       }
+                      @media screen and (max-width: 600px){
+                        display: none;
+                      }
                     }
                     .external-link {
                       @include themify {
@@ -651,6 +654,11 @@ body {
                   }
                   &:nth-child(1) {
                     margin-right: 50px;
+                    @media screen and (max-width: 450px) {
+                      button {
+                        width: 125px;
+                      }
+                    }
                   }
                   &:nth-child(2) {
                     @media screen and (max-width: 450px) {

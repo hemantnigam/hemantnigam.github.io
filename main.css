@@ -783,6 +783,11 @@ body .container main .projects__container__item__description__links a button .li
 .theme-dark body .container main .projects__container__item__description__links a button .github-link {
   background-image: url("/assets/github-dark.svg");
 }
+@media screen and (max-width: 600px) {
+  body .container main .projects__container__item__description__links a button .github-link {
+    display: none;
+  }
+}
 .theme-light body .container main .projects__container__item__description__links a button .external-link {
   background-image: url("/assets/link-dark.svg");
 }
@@ -806,6 +811,11 @@ body .container main .projects__container__item__description__links a button:hov
 }
 body .container main .projects__container__item__description__links a:nth-child(1) {
   margin-right: 50px;
+}
+@media screen and (max-width: 450px) {
+  body .container main .projects__container__item__description__links a:nth-child(1) button {
+    width: 125px;
+  }
 }
 @media screen and (max-width: 450px) {
   body .container main .projects__container__item__description__links a:nth-child(2) button {
