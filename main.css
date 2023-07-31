@@ -405,10 +405,10 @@ body .container main .introduction__cover-image {
   background-size: auto;
 }
 .theme-light body .container main .introduction__cover-image {
-  background-image: url("/assets/light-hero.png");
+  background-image: url("/assets/light-hero.webp");
 }
 .theme-dark body .container main .introduction__cover-image {
-  background-image: url("/assets/dark-hero.png");
+  background-image: url("/assets/dark-hero.webp");
 }
 @media screen and (max-width: 606px) {
   body .container main .introduction__cover-image {
