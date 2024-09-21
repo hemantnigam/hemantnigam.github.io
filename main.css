@@ -504,7 +504,6 @@ body .container main .experience {
 }
 body .container main .experience__container {
   padding: 100px 0px 100px 160px;
-  height: 350px;
 }
 body .container main .experience__container__nav__list {
   display: flex;
@@ -641,11 +640,6 @@ body .container main .experience__container__description a:hover::after {
   body .container main .experience__container {
     padding-left: 0px;
     padding-right: 0px;
-  }
-}
-@media screen and (max-width: 500px) {
-  body .container main .experience__container {
-    height: 550px;
   }
 }
 @media screen and (max-width: 450px) {

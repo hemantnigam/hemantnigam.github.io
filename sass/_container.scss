@@ -398,7 +398,7 @@ body {
         scroll-margin-top: 100px;
         &__container {
           padding: 100px 0px 100px 160px;
-          height: 350px;
+          // height: 350px;
           &__nav {
             &__list {
               display: flex;
@@ -523,9 +523,9 @@ body {
             padding-left: 0px;
             padding-right: 0px;
           }
-          @media screen and (max-width: 500px) {
-            height: 550px;
-          }
+          // @media screen and (max-width: 500px) {
+          //   height: 550px;
+          // }
           @media screen and (max-width: 450px) {
             padding-top: 50px;
           }
