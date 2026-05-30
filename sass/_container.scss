@@ -1,3 +1,21 @@
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 8px 16px;
+  z-index: 100000;
+  text-decoration: none;
+  font-family: $font-family-regular;
+  font-size: 1rem;
+  @include themify {
+    background-color: themed("secondary-color");
+    color: themed("bg-color");
+  }
+  &:focus {
+    top: 0;
+  }
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -56,6 +74,9 @@ body {
           height: 32px;
           width: 32px;
           cursor: pointer;
+          background: none;
+          border: 0;
+          padding: 0;
           svg {
             @include themify {
               stroke: themed("secondary-color");
@@ -87,6 +108,9 @@ body {
             right: 30px;
             cursor: pointer;
             display: none;
+            background: none;
+            border: 0;
+            padding: 0;
           }
           .menu-list {
             display: flex;
@@ -600,80 +624,71 @@ body {
               }
               &__links {
                 display: flex;
-                a {
+                a.project-link {
                   text-decoration: none;
                   margin: 0px 20px;
-                  button {
-                    height: 40px;
-                    width: 100px;
-                    font-size: 1rem;
-                    font-family: $font-family-regular;
-                    cursor: pointer;
-                    border: 0px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-around;
-                    transition: width 0.2s ease;
-                    overflow: hidden;
+                  height: 40px;
+                  width: 90px;
+                  font-size: 1rem;
+                  font-family: $font-family-regular;
+                  cursor: pointer;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-around;
+                  transition: width 0.2s ease;
+                  overflow: hidden;
+                  @include themify {
+                    background-color: themed("primary-color");
+                  }
+                  span.link-label {
+                    text-align: center;
                     @include themify {
-                      background-color: themed("primary-color");
+                      color: themed("bg-color");
                     }
-                    div {
-                      text-align: center;
-                      @include themify {
-                        color: themed("bg-color");
-                      }
-                      &:nth-child(1) {
-                        min-width: 90px;
-                        @media screen and (max-width: 450px) {
-                          min-width: 100px;
-                        }
-                      }
-                    }
-                    .link {
-                      background-size: 20px;
-                      background-repeat: no-repeat;
-                      height: 25px;
-                      width: 25px;
-                    }
-                    .github-link {
-                      @include themify {
-                        background-image: themed("github");
-                      }
-                      @media screen and (max-width: 600px){
-                        display: none;
-                      }
-                    }
-                    .external-link {
-                      @include themify {
-                        background-image: themed("link");
-                      }
-                      @media screen and (max-width: 600px){
-                        display: none;
-                      }
-                    }
-                    &:hover {
-                      width: 130px;
-                      transition: width 0.2s ease;
-                    }
+                    min-width: 90px;
                     @media screen and (max-width: 450px) {
-                      width: 100px;
-                      font-size: 0.8rem;
+                      min-width: 100px;
                     }
+                  }
+                  .link {
+                    background-size: 20px;
+                    background-repeat: no-repeat;
+                    height: 25px;
+                    width: 25px;
+                  }
+                  .github-link {
+                    @include themify {
+                      background-image: themed("github");
+                    }
+                    @media screen and (max-width: 600px){
+                      display: none;
+                    }
+                  }
+                  .external-link {
+                    @include themify {
+                      background-image: themed("link");
+                    }
+                    @media screen and (max-width: 600px){
+                      display: none;
+                    }
+                  }
+                  &:hover {
+                    width: 130px;
+                    transition: width 0.2s ease;
+                  }
+                  @media screen and (max-width: 450px) {
+                    width: 90px;
+                    font-size: 0.8rem;
                   }
                   &:nth-child(1) {
                     margin-right: 50px;
                     @media screen and (max-width: 450px) {
-                      button {
-                        width: 125px;
-                      }
+                      width: 125px;
                     }
                   }
                   &:nth-child(2) {
                     @media screen and (max-width: 450px) {
-                      button {
-                        width: 125px;
-                      }
+                      width: 125px;
                     }
                   }
                 }
@@ -739,23 +754,18 @@ body {
           }
           &__btn {
             margin-top: 30px;
-            button {
+            a.contact-btn {
               cursor: pointer;
               height: 50px;
               width: 120px;
-              border: 0px;
               font-size: 1.1rem;
               display: flex;
               align-items: center;
               justify-content: center;
+              text-decoration: none;
               @include themify {
                 background-color: themed("primary-color");
-              }
-              a {
-                text-decoration: none;
-                @include themify {
-                  color: themed("bg-color");
-                }
+                color: themed("bg-color");
               }
               @media screen and (max-width: 550px) {
                 width: 100px;

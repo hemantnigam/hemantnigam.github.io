@@ -53,12 +53,13 @@
     </script>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <div class="container">
       <header>
-        <nav>
+        <nav aria-label="Main navigation">
           <div class="logo"></div>
-          <div class="nav-icon">
-            <svg fill="none" viewBox="0 0 24 24" class="h-8 w-8">
+          <button class="nav-icon" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-menu">
+            <svg aria-hidden="true" focusable="false" fill="none" viewBox="0 0 24 24" class="h-8 w-8">
               <path
                 stroke-linecap="square"
                 stroke-width="1.5"
@@ -68,10 +69,10 @@
                 stroke-dasharray="1px 1px"
               ></path>
             </svg>
-          </div>
+          </button>
           <div class="list-container">
-            <div class="close-icon">
-              <svg fill="none" viewBox="0 0 24 24" class="h-8 w-8">
+            <button class="close-icon" aria-label="Close navigation menu">
+              <svg aria-hidden="true" focusable="false" fill="none" viewBox="0 0 24 24" class="h-8 w-8">
                 <path
                   stroke-linecap="square"
                   stroke-width="1.5"
@@ -81,8 +82,8 @@
                   stroke-dasharray="1px 1px"
                 ></path>
               </svg>
-            </div>
-            <ul class="menu-list">
+            </button>
+            <ul id="main-menu" class="menu-list">
               <li class="menu-list__item">
                 <a class="anchor-link" href="#introduction">Introduction</a>
               </li>
@@ -98,12 +99,12 @@
               <li class="menu-list__item">
                 <a class="anchor-link" href="#contact">Contact</a>
               </li>
-              <li id="theme-toggle" class="menu-list__item theme-toggle"></li>
+              <li id="theme-toggle" class="menu-list__item theme-toggle" role="button" aria-label="Toggle color theme" tabindex="0"></li>
             </ul>
           </div>
         </nav>
       </header>
-      <main>
+      <main id="main-content">
         <section id="introduction" class="introduction">
           <div class="introduction__content">
             <span class="introduction__content__name-label">Hi, My name is</span>
@@ -120,6 +121,8 @@
                 ><span>More about me</span
                 ><span class="arrow">
                   <svg
+                    aria-hidden="true"
+                    focusable="false"
                     stroke-width="0"
                     viewBox="0 0 16 16"
                     class="rotate-45 text-dark-200 transition duration-300 ease-in-out group-hover:translate-x-1 group-hover:translate-y-1 group-hover:text-dark-300 dark:text-dark-400"
@@ -141,7 +144,7 @@
         <section id="about" class="about">
           <div class="divider">
             <h2 class="divider__label">About me</h2>
-            <div class="divider__line"></div>
+            <div class="divider__line" aria-hidden="true"></div>
           </div>
           <div class="about__container">
             <div class="about__container__details">
@@ -201,10 +204,10 @@
         <section id="experience" class="experience">
           <div class="divider">
             <h2 class="divider__label">Where I've worked</h2>
-            <div class="divider__line"></div>
+            <div class="divider__line" aria-hidden="true"></div>
           </div>
           <div class="experience__container">
-            <nav class="experience__container__nav">
+            <nav class="experience__container__nav" aria-label="Work experience">
               <ul class="experience__container__nav__list">
                 <li class="experience__container__nav__list__item">
                   <input
@@ -244,7 +247,7 @@
               <div class="experience__container__description__title">
                 <span>Senior Software Engineer - Frontend</span><span>@</span>
                 <span>
-                  <a href="https://www.chegg.com/" target="_blank">Chegg</a>
+                  <a href="https://www.chegg.com/" target="_blank" rel="noopener noreferrer">Chegg</a>
                 </span>
               </div>
               <div class="experience__container__description__subtitle">
@@ -263,7 +266,7 @@
                   data-icon="►"
                   class="experience__container__description__list__item"
                 >
-                  Achieved over 1 million page views on Chegg’s signed-out
+                  Achieved over 1 million page views on Chegg's signed-out
                   pages by leading development using Next.js, ensuring
                   exceptional performance and user engagement.
                 </li>
@@ -316,7 +319,7 @@
               <div class="experience__container__description__title">
                 <span>UI Engineer 2</span><span>@</span
                 ><span
-                  ><a href="https://www.ciena.com/" target="_blank"
+                  ><a href="https://www.ciena.com/" target="_blank" rel="noopener noreferrer"
                     >Ciena</a
                   ></span
                 >
@@ -359,7 +362,7 @@
               <div class="experience__container__description__title">
                 <span>Senior Frontend Engineer</span><span>@</span
                 ><span
-                  ><a href="https://www.nagarro.com/" target="_blank"
+                  ><a href="https://www.nagarro.com/" target="_blank" rel="noopener noreferrer"
                     >Nagarro</a
                   ></span
                 >
@@ -408,7 +411,7 @@
               <div class="experience__container__description__title">
                 <span>Frontend Engineer</span><span>@</span
                 ><span
-                  ><a href="https://www.accenture.com/" target="_blank"
+                  ><a href="https://www.accenture.com/" target="_blank" rel="noopener noreferrer"
                     >Accenture</a
                   ></span
                 >
@@ -445,7 +448,7 @@
         <section id="projects" class="projects">
           <div class="divider">
             <h2 class="divider__label">Projects</h2>
-            <div class="divider__line"></div>
+            <div class="divider__line" aria-hidden="true"></div>
           </div>
           <div class="projects__container">
             <div class="projects__container__item">
@@ -468,20 +471,20 @@
                   <a
                     href="https://resonant-kataifi726e09.netlify.app/"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
                   >
-                    <button>
-                      <div>Demo</div>
-                      <div class="link external-link"></div>
-                    </button>
+                    <span class="link-label">Demo</span>
+                    <span class="link external-link" aria-hidden="true"></span>
                   </a>
                   <a
                     href="https://github.com/hemantnigam"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
                   >
-                    <button>
-                      <div>GitHub</div>
-                      <div class="link external-link"></div>
-                    </button>
+                    <span class="link-label">GitHub</span>
+                    <span class="link external-link" aria-hidden="true"></span>
                   </a>
                 </div>
               </div>
@@ -513,20 +516,20 @@
                   <a
                     href="https://www.npmjs.com/package/@hemantnigam/react-search-autocomplete"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
                   >
-                    <button>
-                      <div>Demo</div>
-                      <div class="link external-link"></div>
-                    </button>
+                    <span class="link-label">Demo</span>
+                    <span class="link external-link" aria-hidden="true"></span>
                   </a>
                   <a
                     href="https://github.com/hemantnigam/react-search-autocomplete"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
                   >
-                    <button>
-                      <div>GitHub</div>
-                      <div class="link external-link"></div>
-                    </button>
+                    <span class="link-label">GitHub</span>
+                    <span class="link external-link" aria-hidden="true"></span>
                   </a>
                 </div>
               </div>
@@ -542,7 +545,7 @@
                 </h3>
                 <div class="projects__container__item__description__content">
                   A medium clone where user can read and write articles. User
-                  can also bookmark and comment on other user’s articles. This
+                  can also bookmark and comment on other user's articles. This
                   application is developed using conduit open source api.
                 </div>
                 <div class="projects__container__item__description__techs">
@@ -553,20 +556,23 @@
                   <img loading="lazy" src="./assets/git.svg" alt="Git icon" />
                 </div>
                 <div class="projects__container__item__description__links">
-                  <a href="https://readarticles.netlify.app/" target="_blank">
-                    <button>
-                      <div>Demo</div>
-                      <div class="link external-link"></div>
-                    </button>
+                  <a
+                    href="https://readarticles.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <span class="link-label">Demo</span>
+                    <span class="link external-link" aria-hidden="true"></span>
                   </a>
                   <a
                     href="https://github.com/hemantnigam/medium-clone"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
                   >
-                    <button>
-                      <div>GitHub</div>
-                      <div class="link external-link"></div>
-                    </button>
+                    <span class="link-label">GitHub</span>
+                    <span class="link external-link" aria-hidden="true"></span>
                   </a>
                 </div>
               </div>
@@ -593,20 +599,23 @@
                   <img loading="lazy" src="./assets/git.svg" alt="Git icon" />
                 </div>
                 <div class="projects__container__item__description__links">
-                  <a href="https://yt-download.netlify.app/" target="_blank">
-                    <button>
-                      <div>Demo</div>
-                      <div class="link external-link"></div>
-                    </button>
+                  <a
+                    href="https://yt-download.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <span class="link-label">Demo</span>
+                    <span class="link external-link" aria-hidden="true"></span>
                   </a>
                   <a
                     href="https://github.com/hemantnigam/yt_downloader_frontend"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
                   >
-                    <button>
-                      <div>GitHub</div>
-                      <div class="link external-link"></div>
-                    </button>
+                    <span class="link-label">GitHub</span>
+                    <span class="link external-link" aria-hidden="true"></span>
                   </a>
                 </div>
               </div>
@@ -634,11 +643,11 @@
                   <a
                     href="https://github.com/hemantnigam/samvidhan_mitra"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
                   >
-                    <button>
-                      <div>GitHub</div>
-                      <div class="link external-link"></div>
-                    </button>
+                    <span class="link-label">GitHub</span>
+                    <span class="link external-link" aria-hidden="true"></span>
                   </a>
                 </div>
               </div>
@@ -667,11 +676,11 @@
                   <a
                     href="https://github.com/er-hemantnigam/sarkari-job-bot"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
                   >
-                    <button>
-                      <div>GitHub</div>
-                      <div class="link external-link"></div>
-                    </button>
+                    <span class="link-label">GitHub</span>
+                    <span class="link external-link" aria-hidden="true"></span>
                   </a>
                 </div>
               </div>
@@ -684,14 +693,12 @@
         <section id="contact" class="contact">
           <div class="divider">
             <h2 class="divider__label">Contact</h2>
-            <div class="divider__line"></div>
+            <div class="divider__line" aria-hidden="true"></div>
           </div>
           <div class="contact__container">
             <h3 class="contact__container__heading">Get In Touch</h3>
             <div class="contact__container__btn">
-              <button>
-                <a href="mailto: h.nigam654@gmail.com">Say Hello</a>
-              </button>
+              <a href="mailto:h.nigam654@gmail.com" class="contact-btn">Say Hello</a>
             </div>
           </div>
         </section>
