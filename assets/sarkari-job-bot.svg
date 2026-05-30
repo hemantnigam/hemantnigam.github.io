@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300">
+  <!-- Background -->
+  <rect width="500" height="300" rx="6" fill="#17212b"/>
+
+  <!-- Title bar -->
+  <rect width="500" height="36" rx="6" fill="#1f2d3a"/>
+  <rect y="30" width="500" height="6" fill="#1f2d3a"/>
+  <circle cx="16" cy="18" r="5" fill="#ff5f57"/>
+  <circle cx="34" cy="18" r="5" fill="#febc2e"/>
+  <circle cx="52" cy="18" r="5" fill="#28c840"/>
+  <text x="250" y="23" font-family="monospace" font-size="11" fill="#64748b" text-anchor="middle">Sarkari Job Bot · Telegram</text>
+
+  <!-- Phone frame -->
+  <rect x="148" y="44" width="204" height="250" rx="20" fill="#1c1c1e" stroke="#3a3a3c" stroke-width="2"/>
+  <rect x="154" y="50" width="192" height="238" rx="16" fill="#17212b"/>
+
+  <!-- Telegram-style header -->
+  <rect x="154" y="50" width="192" height="46" fill="#2b5278"/>
+  <polyline points="166,73 160,68 166,63" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="183" cy="73" r="14" fill="#229ED9"/>
+  <text x="183" y="78" font-family="sans-serif" font-size="13" fill="white" text-anchor="middle">&#127963;</text>
+  <text x="202" y="68" font-family="sans-serif" font-size="10" font-weight="bold" fill="white">Sarkari Job Bot</text>
+  <circle cx="202" cy="77" r="3" fill="#2ecc71"/>
+  <text x="208" y="80" font-family="sans-serif" font-size="8" fill="#aaaaaa">online</text>
+  <circle cx="328" cy="65" r="2" fill="white"/>
+  <circle cx="335" cy="65" r="2" fill="white"/>
+  <circle cx="342" cy="65" r="2" fill="white"/>
+
+  <!-- Chat area -->
+  <rect x="154" y="96" width="192" height="156" fill="#0e1621"/>
+
+  <!-- Welcome bot message -->
+  <rect x="160" y="102" width="160" height="52" rx="8" fill="#182533"/>
+  <text x="168" y="116" font-family="sans-serif" font-size="7.5" fill="#ffffff">&#128075; Welcome Hemant!</text>
+  <text x="168" y="128" font-family="sans-serif" font-size="7.5" fill="#aaaaaa">&#127963;&#65039; Sarkari Job Alerts Bot</text>
+  <text x="168" y="140" font-family="sans-serif" font-size="7.5" fill="#aaaaaa">Get instant govt job alerts</text>
+  <text x="168" y="150" font-family="sans-serif" font-size="6" fill="#5b7fa6">10:02 AM &#10003;&#10003;</text>
+
+  <!-- Category buttons -->
+  <rect x="160" y="158" width="160" height="44" rx="8" fill="#182533"/>
+  <text x="168" y="170" font-family="sans-serif" font-size="7.5" fill="#aaaaaa">&#128073; Pick your categories:</text>
+  <rect x="163" y="174" width="46" height="14" rx="4" fill="#2b5278"/>
+  <text x="186" y="184" font-family="sans-serif" font-size="7" fill="white" text-anchor="middle">SSC</text>
+  <rect x="213" y="174" width="46" height="14" rx="4" fill="#2b5278"/>
+  <text x="236" y="184" font-family="sans-serif" font-size="7" fill="white" text-anchor="middle">Railway</text>
+  <rect x="263" y="174" width="46" height="14" rx="4" fill="#2b5278"/>
+  <text x="286" y="184" font-family="sans-serif" font-size="7" fill="white" text-anchor="middle">Banking</text>
+  <text x="308" y="198" font-family="sans-serif" font-size="6" fill="#5b7fa6">10:02 AM &#10003;&#10003;</text>
+
+  <!-- Alert message bubble -->
+  <rect x="160" y="206" width="162" height="68" rx="8" fill="#182533"/>
+  <text x="168" y="218" font-family="sans-serif" font-size="7.5" font-weight="bold" fill="#229ED9">&#128276; New Job Alert</text>
+  <text x="168" y="230" font-family="sans-serif" font-size="7.5" font-weight="bold" fill="white">SSC CGL 2025</text>
+  <text x="168" y="241" font-family="sans-serif" font-size="7" fill="#aaaaaa">&#127991;&#65039; SSC  &#128205; All India</text>
+  <text x="168" y="252" font-family="sans-serif" font-size="7" fill="#aaaaaa">&#127891; Graduate  &#128101; 17,727</text>
+  <text x="168" y="263" font-family="sans-serif" font-size="7" fill="#aaaaaa">&#128197; Last Date: 31 Jul 2025</text>
+  <text x="168" y="272" font-family="sans-serif" font-size="7" fill="#229ED9">&#128279; Apply / Details</text>
+
+  <!-- Input bar -->
+  <rect x="154" y="252" width="192" height="36" fill="#17212b"/>
+  <rect x="160" y="258" width="138" height="24" rx="12" fill="#2b5278" opacity="0.5"/>
+  <text x="175" y="274" font-family="sans-serif" font-size="8" fill="#5b7fa6">Message...</text>
+  <circle cx="310" cy="270" r="11" fill="#229ED9"/>
+  <text x="310" y="274" font-family="sans-serif" font-size="11" fill="white" text-anchor="middle">&#10148;</text>
+
+  <!-- Home indicator -->
+  <rect x="224" y="286" width="52" height="4" rx="2" fill="#3a3a3c"/>
+
+  <!-- Left panel - Tech Stack -->
+  <rect x="10" y="50" width="128" height="200" rx="8" fill="#1f2d3a"/>
+  <text x="74" y="72" font-family="sans-serif" font-size="9" font-weight="bold" fill="#229ED9" text-anchor="middle">TECH STACK</text>
+  <line x1="20" y1="78" x2="128" y2="78" stroke="#2b3f52" stroke-width="0.5"/>
+  <rect x="18" y="86" width="72" height="18" rx="9" fill="#0d1f2e"/>
+  <text x="54" y="99" font-family="sans-serif" font-size="8" fill="#f7df1e" text-anchor="middle">Node.js</text>
+  <rect x="96" y="86" width="36" height="18" rx="9" fill="#0d1f2e"/>
+  <text x="114" y="99" font-family="sans-serif" font-size="8" fill="#47a248" text-anchor="middle">Mongo</text>
+  <rect x="18" y="110" width="56" height="18" rx="9" fill="#0d1f2e"/>
+  <text x="46" y="123" font-family="sans-serif" font-size="8" fill="#229ED9" text-anchor="middle">Telegraf</text>
+  <rect x="80" y="110" width="52" height="18" rx="9" fill="#0d1f2e"/>
+  <text x="106" y="123" font-family="sans-serif" font-size="8" fill="#e36209" text-anchor="middle">Cheerio</text>
+  <rect x="18" y="134" width="66" height="18" rx="9" fill="#0d1f2e"/>
+  <text x="51" y="147" font-family="sans-serif" font-size="8" fill="#60a5fa" text-anchor="middle">node-cron</text>
+  <rect x="90" y="134" width="40" height="18" rx="9" fill="#0d1f2e"/>
+  <text x="110" y="147" font-family="sans-serif" font-size="8" fill="#60a5fa" text-anchor="middle">axios</text>
+  <line x1="20" y1="162" x2="128" y2="162" stroke="#2b3f52" stroke-width="0.5"/>
+  <text x="74" y="177" font-family="sans-serif" font-size="9" font-weight="bold" fill="#229ED9" text-anchor="middle">FEATURES</text>
+  <circle cx="24" cy="192" r="3" fill="#229ED9"/>
+  <text x="32" y="196" font-family="sans-serif" font-size="8" fill="#94a3b8">Live job scraping</text>
+  <circle cx="24" cy="209" r="3" fill="#2ecc71"/>
+  <text x="32" y="213" font-family="sans-serif" font-size="8" fill="#94a3b8">Category filters</text>
+  <circle cx="24" cy="226" r="3" fill="#f59e0b"/>
+  <text x="32" y="230" font-family="sans-serif" font-size="8" fill="#94a3b8">State &amp; qual. match</text>
+  <circle cx="24" cy="243" r="3" fill="#a78bfa"/>
+  <text x="32" y="247" font-family="sans-serif" font-size="8" fill="#94a3b8">Free &amp; premium plans</text>
+
+  <!-- Right panel -->
+  <rect x="362" y="50" width="128" height="200" rx="8" fill="#1f2d3a"/>
+  <text x="426" y="72" font-family="sans-serif" font-size="9" font-weight="bold" fill="#229ED9" text-anchor="middle">JOB CATEGORIES</text>
+  <line x1="372" y1="78" x2="480" y2="78" stroke="#2b3f52" stroke-width="0.5"/>
+  <rect x="372" y="86" width="36" height="16" rx="8" fill="#2b5278"/>
+  <text x="390" y="97" font-family="sans-serif" font-size="7" fill="white" text-anchor="middle">SSC</text>
+  <rect x="414" y="86" width="50" height="16" rx="8" fill="#2b5278"/>
+  <text x="439" y="97" font-family="sans-serif" font-size="7" fill="white" text-anchor="middle">Railway</text>
+  <rect x="372" y="108" width="52" height="16" rx="8" fill="#2b5278"/>
+  <text x="398" y="119" font-family="sans-serif" font-size="7" fill="white" text-anchor="middle">Banking</text>
+  <rect x="430" y="108" width="38" height="16" rx="8" fill="#2b5278"/>
+  <text x="449" y="119" font-family="sans-serif" font-size="7" fill="white" text-anchor="middle">UPSC</text>
+  <rect x="372" y="130" width="48" height="16" rx="8" fill="#2b5278"/>
+  <text x="396" y="141" font-family="sans-serif" font-size="7" fill="white" text-anchor="middle">Defence</text>
+  <rect x="426" y="130" width="46" height="16" rx="8" fill="#2b5278"/>
+  <text x="449" y="141" font-family="sans-serif" font-size="7" fill="white" text-anchor="middle">Teaching</text>
+  <rect x="372" y="152" width="40" height="16" rx="8" fill="#2b5278"/>
+  <text x="392" y="163" font-family="sans-serif" font-size="7" fill="white" text-anchor="middle">Police</text>
+  <rect x="418" y="152" width="52" height="16" rx="8" fill="#2b5278"/>
+  <text x="444" y="163" font-family="sans-serif" font-size="7" fill="white" text-anchor="middle">State PSC</text>
+  <line x1="372" y1="178" x2="480" y2="178" stroke="#2b3f52" stroke-width="0.5"/>
+  <text x="426" y="194" font-family="sans-serif" font-size="9" font-weight="bold" fill="#229ED9" text-anchor="middle">PLANS</text>
+  <rect x="372" y="200" width="104" height="30" rx="6" fill="#0d1f2e" stroke="#2b5278" stroke-width="1"/>
+  <text x="380" y="212" font-family="sans-serif" font-size="8" font-weight="bold" fill="#aaaaaa">Free</text>
+  <text x="380" y="225" font-family="sans-serif" font-size="7" fill="#64748b">3 alerts/day · 1 category</text>
+  <rect x="372" y="236" width="104" height="30" rx="6" fill="#0d1f2e" stroke="#229ED9" stroke-width="1"/>
+  <text x="380" y="248" font-family="sans-serif" font-size="8" font-weight="bold" fill="#229ED9">Premium &#9889;</text>
+  <text x="380" y="261" font-family="sans-serif" font-size="7" fill="#64748b">Unlimited · all categories</text>
+</svg>

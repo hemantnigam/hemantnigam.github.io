@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300">
+  <!-- Background -->
+  <rect width="500" height="300" rx="6" fill="#fafafa"/>
+
+  <!-- Title bar -->
+  <rect width="500" height="36" rx="6" fill="#ffffff"/>
+  <rect y="30" width="500" height="6" fill="#ffffff"/>
+  <line x1="0" y1="36" x2="500" y2="36" stroke="#e5e7eb" stroke-width="1"/>
+  <circle cx="16" cy="18" r="5" fill="#ff5f57"/>
+  <circle cx="34" cy="18" r="5" fill="#febc2e"/>
+  <circle cx="52" cy="18" r="5" fill="#28c840"/>
+  <text x="250" y="23" font-family="monospace" font-size="11" fill="#9ca3af" text-anchor="middle">Daily Reads</text>
+
+  <!-- Nav bar -->
+  <rect x="0" y="36" width="500" height="44" fill="#ffffff"/>
+  <line x1="0" y1="80" x2="500" y2="80" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="28" y="64" font-family="Georgia, serif" font-size="18" font-weight="bold" fill="#1a1a1a" text-anchor="middle">D</text>
+  <text x="52" y="64" font-family="Georgia, serif" font-size="14" fill="#374151">Daily Reads</text>
+  <text x="320" y="64" font-family="sans-serif" font-size="11" fill="#6b7280">Explore</text>
+  <text x="370" y="64" font-family="sans-serif" font-size="11" fill="#6b7280">Bookmarks</text>
+  <circle cx="462" cy="58" r="14" fill="#6366f1"/>
+  <text x="462" y="63" font-family="sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">H</text>
+
+  <!-- Content area -->
+  <rect x="0" y="80" width="500" height="220" fill="#fafafa"/>
+
+  <!-- Article card 1 (featured) -->
+  <rect x="20" y="92" width="300" height="120" rx="6" fill="#ffffff"/>
+  <defs>
+    <filter id="shadow2" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#00000015"/>
+    </filter>
+  </defs>
+  <rect x="32" y="103" width="52" height="16" rx="8" fill="#ede9fe"/>
+  <text x="58" y="115" font-family="sans-serif" font-size="8" fill="#7c3aed" text-anchor="middle">Technology</text>
+  <text x="32" y="134" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#111827">The Future of React</text>
+  <text x="32" y="150" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#111827">Server Components</text>
+  <text x="32" y="168" font-family="sans-serif" font-size="9" fill="#6b7280">Exploring how RSC changes the way</text>
+  <text x="32" y="180" font-family="sans-serif" font-size="9" fill="#6b7280">we think about data fetching...</text>
+  <circle cx="42" cy="200" r="8" fill="#f59e0b"/>
+  <text x="42" y="204" font-family="sans-serif" font-size="7" fill="white" text-anchor="middle">A</text>
+  <text x="56" y="202" font-family="sans-serif" font-size="9" fill="#374151">Alex M.</text>
+  <text x="100" y="202" font-family="sans-serif" font-size="9" fill="#9ca3af">· 6 min read</text>
+  <path d="M300,194 L300,208 L293,203 L286,208 L286,194 Z" fill="none" stroke="#6366f1" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <!-- Article card 2 -->
+  <rect x="20" y="222" width="300" height="70" rx="6" fill="#ffffff"/>
+  <rect x="32" y="232" width="44" height="14" rx="7" fill="#fce7f3"/>
+  <text x="54" y="243" font-family="sans-serif" font-size="8" fill="#be185d" text-anchor="middle">Design</text>
+  <text x="32" y="260" font-family="Georgia, serif" font-size="12" font-weight="bold" fill="#111827">CSS Grid vs Flexbox in 2025</text>
+  <circle cx="42" cy="278" r="7" fill="#10b981"/>
+  <text x="42" y="282" font-family="sans-serif" font-size="7" fill="white" text-anchor="middle">S</text>
+  <text x="56" y="280" font-family="sans-serif" font-size="9" fill="#374151">Sara K.</text>
+  <text x="96" y="280" font-family="sans-serif" font-size="9" fill="#9ca3af">· 4 min read</text>
+  <path d="M300,270 L300,284 L293,279 L286,284 L286,270 Z" fill="#6366f1" stroke="#6366f1" stroke-width="1" stroke-linejoin="round"/>
+
+  <!-- Sidebar -->
+  <rect x="336" y="92" width="148" height="198" rx="6" fill="#ffffff"/>
+  <text x="352" y="112" font-family="sans-serif" font-size="10" font-weight="bold" fill="#374151">Trending Topics</text>
+  <line x1="352" y1="118" x2="468" y2="118" stroke="#e5e7eb" stroke-width="0.5"/>
+  <rect x="352" y="125" width="46" height="18" rx="9" fill="#eff6ff"/>
+  <text x="375" y="138" font-family="sans-serif" font-size="8" fill="#2563eb" text-anchor="middle">React</text>
+  <rect x="404" y="125" width="54" height="18" rx="9" fill="#f0fdf4"/>
+  <text x="431" y="138" font-family="sans-serif" font-size="8" fill="#16a34a" text-anchor="middle">Next.js</text>
+  <rect x="352" y="150" width="60" height="18" rx="9" fill="#fefce8"/>
+  <text x="382" y="163" font-family="sans-serif" font-size="8" fill="#ca8a04" text-anchor="middle">TypeScript</text>
+  <rect x="418" y="150" width="40" height="18" rx="9" fill="#fdf4ff"/>
+  <text x="438" y="163" font-family="sans-serif" font-size="8" fill="#9333ea" text-anchor="middle">CSS</text>
+  <rect x="352" y="175" width="50" height="18" rx="9" fill="#fff7ed"/>
+  <text x="377" y="188" font-family="sans-serif" font-size="8" fill="#ea580c" text-anchor="middle">GraphQL</text>
+  <line x1="352" y1="205" x2="468" y2="205" stroke="#e5e7eb" stroke-width="0.5"/>
+  <text x="352" y="222" font-family="sans-serif" font-size="10" font-weight="bold" fill="#374151">Your Stats</text>
+  <text x="352" y="240" font-family="sans-serif" font-size="9" fill="#6b7280">Articles read</text>
+  <text x="460" y="240" font-family="sans-serif" font-size="9" font-weight="bold" fill="#6366f1" text-anchor="end">42</text>
+  <text x="352" y="256" font-family="sans-serif" font-size="9" fill="#6b7280">Bookmarked</text>
+  <text x="460" y="256" font-family="sans-serif" font-size="9" font-weight="bold" fill="#6366f1" text-anchor="end">8</text>
+  <text x="352" y="272" font-family="sans-serif" font-size="9" fill="#6b7280">Comments</text>
+  <text x="460" y="272" font-family="sans-serif" font-size="9" font-weight="bold" fill="#6366f1" text-anchor="end">15</text>
+</svg>

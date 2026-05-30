@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300">
+  <!-- Background -->
+  <rect width="500" height="300" rx="6" fill="#0f0f0f"/>
+
+  <!-- Title bar -->
+  <rect width="500" height="36" rx="6" fill="#212121"/>
+  <rect y="30" width="500" height="6" fill="#212121"/>
+  <circle cx="16" cy="18" r="5" fill="#ff5f57"/>
+  <circle cx="34" cy="18" r="5" fill="#febc2e"/>
+  <circle cx="52" cy="18" r="5" fill="#28c840"/>
+  <rect x="220" y="8" width="24" height="18" rx="4" fill="#ff0000"/>
+  <polygon points="228,12 236,17 228,22" fill="white"/>
+  <text x="252" y="23" font-family="sans-serif" font-size="11" fill="#aaaaaa">YT Downloader</text>
+
+  <!-- Content area -->
+  <rect x="0" y="36" width="500" height="264" fill="#181818"/>
+
+  <!-- Header -->
+  <rect x="0" y="36" width="500" height="50" fill="#212121"/>
+  <rect x="20" y="48" width="20" height="16" rx="3" fill="#ff0000"/>
+  <polygon points="26,51 34,56 26,61" fill="white"/>
+  <text x="48" y="61" font-family="sans-serif" font-size="14" font-weight="bold" fill="#f1f1f1">YT</text>
+  <text x="66" y="61" font-family="sans-serif" font-size="14" fill="#aaaaaa">Downloader</text>
+
+  <!-- URL input row -->
+  <rect x="20" y="104" width="380" height="36" rx="4" fill="#121212" stroke="#3f3f3f" stroke-width="1"/>
+  <text x="36" y="127" font-family="monospace" font-size="11" fill="#717171">https://youtube.com/watch?v=dQw4w9WgXcQ</text>
+  <rect x="408" y="104" width="72" height="36" rx="4" fill="#ff0000"/>
+  <text x="444" y="127" font-family="sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Fetch</text>
+
+  <!-- Video preview card -->
+  <rect x="20" y="156" width="148" height="84" rx="4" fill="#0f0f0f"/>
+  <defs>
+    <linearGradient id="thumb2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="156" width="148" height="84" rx="4" fill="url(#thumb2)"/>
+  <circle cx="94" cy="198" r="22" fill="rgba(0,0,0,0.6)"/>
+  <polygon points="87,189 87,207 108,198" fill="#ff0000"/>
+  <rect x="144" y="224" width="18" height="10" rx="2" fill="rgba(0,0,0,0.8)"/>
+  <text x="153" y="232" font-family="monospace" font-size="6" fill="white" text-anchor="middle">3:32</text>
+
+  <!-- Video info -->
+  <text x="178" y="172" font-family="sans-serif" font-size="11" font-weight="bold" fill="#f1f1f1">Never Gonna Give You Up</text>
+  <text x="178" y="188" font-family="sans-serif" font-size="10" fill="#aaaaaa">Rick Astley · 1.4B views</text>
+
+  <!-- Format selector -->
+  <text x="178" y="210" font-family="sans-serif" font-size="9" fill="#717171">FORMAT</text>
+  <rect x="178" y="216" width="60" height="22" rx="3" fill="#ff0000"/>
+  <text x="208" y="231" font-family="sans-serif" font-size="10" fill="white" text-anchor="middle">MP4 HD</text>
+  <rect x="244" y="216" width="54" height="22" rx="3" fill="#3f3f3f"/>
+  <text x="271" y="231" font-family="sans-serif" font-size="10" fill="#aaaaaa" text-anchor="middle">MP3</text>
+  <rect x="304" y="216" width="54" height="22" rx="3" fill="#3f3f3f"/>
+  <text x="331" y="231" font-family="sans-serif" font-size="10" fill="#aaaaaa" text-anchor="middle">WEBM</text>
+
+  <!-- Quality row -->
+  <text x="178" y="254" font-family="sans-serif" font-size="9" fill="#717171">QUALITY</text>
+  <rect x="178" y="259" width="36" height="18" rx="3" fill="#272727" stroke="#ff0000" stroke-width="1"/>
+  <text x="196" y="272" font-family="sans-serif" font-size="9" fill="#f1f1f1" text-anchor="middle">1080p</text>
+  <rect x="220" y="259" width="36" height="18" rx="3" fill="#272727"/>
+  <text x="238" y="272" font-family="sans-serif" font-size="9" fill="#aaaaaa" text-anchor="middle">720p</text>
+  <rect x="262" y="259" width="36" height="18" rx="3" fill="#272727"/>
+  <text x="280" y="272" font-family="sans-serif" font-size="9" fill="#aaaaaa" text-anchor="middle">480p</text>
+
+  <!-- Download button -->
+  <rect x="368" y="216" width="112" height="62" rx="4" fill="#ff0000"/>
+  <text x="424" y="244" font-family="sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">⬇ Download</text>
+  <text x="424" y="260" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.7)" text-anchor="middle">128 MB</text>
+
+  <!-- Progress bar -->
+  <rect x="20" y="290" width="460" height="4" rx="2" fill="#3f3f3f"/>
+  <rect x="20" y="290" width="310" height="4" rx="2" fill="#ff0000"/>
+  <text x="340" y="298" font-family="monospace" font-size="8" fill="#717171">67%</text>
+</svg>
