@@ -1,11 +1,13 @@
 @font-face {
   font-family: 'Epilogue';
   src: url("/fonts/epilogue.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Epilogue-Light';
   src: url("/fonts/epilogue-light.ttf") format("truetype");
+  font-display: swap;
 }
 
 $font-size: 16px;
