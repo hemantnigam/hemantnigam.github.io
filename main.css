@@ -14,13 +14,18 @@ body {
   position: relative;
   font-family: "Epilogue", sans-serif;
   font-size: 16px;
-  transition: background-color 0.5s ease;
+}
+body h1, body h2, body h3, body p {
+  margin: 0;
 }
 .theme-light body {
   background-color: rgb(237, 237, 237);
 }
 .theme-dark body {
   background-color: rgb(23, 23, 23);
+}
+body {
+  transition: background-color 0.5s ease;
 }
 body::-webkit-scrollbar {
   width: 8px;
@@ -54,16 +59,16 @@ body .container header nav {
   justify-content: space-between;
   font-family: "Epilogue-Light", sans-serif;
 }
-body .container header nav .logo {
-  background-size: 40px 40px;
-  height: 40px;
-  width: 40px;
-}
 .theme-light body .container header nav .logo {
   background-image: url("/assets/logo-dark.svg");
 }
 .theme-dark body .container header nav .logo {
   background-image: url("/assets/logo-light.svg");
+}
+body .container header nav .logo {
+  background-size: 40px 40px;
+  height: 40px;
+  width: 40px;
 }
 body .container header nav .nav-icon {
   height: 32px;
@@ -87,15 +92,6 @@ body .container header nav .nav-icon {
     display: none;
   }
 }
-body .container header nav .list-container .close-icon {
-  height: 32px;
-  width: 32px;
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  cursor: pointer;
-  display: none;
-}
 .theme-light body .container header nav .list-container .close-icon {
   stroke: rgb(55, 55, 55);
 }
@@ -107,6 +103,15 @@ body .container header nav .list-container .close-icon {
 }
 .theme-dark body .container header nav .list-container .close-icon:hover {
   stroke: rgb(143, 143, 143);
+}
+body .container header nav .list-container .close-icon {
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  display: none;
 }
 body .container header nav .list-container .menu-list {
   display: flex;
@@ -440,6 +445,7 @@ body .container main .about__container__details {
 }
 body .container main .about__container__details__about-me__label {
   text-transform: uppercase;
+  font-family: "Epilogue", sans-serif;
 }
 .theme-light body .container main .about__container__details__about-me__label {
   color: rgb(181, 181, 181);
@@ -578,14 +584,14 @@ body .container main .experience__container__description__title {
 .theme-dark body .container main .experience__container__description__title {
   color: rgb(237, 237, 237);
 }
-body .container main .experience__container__description__title span {
-  margin-right: 5px;
-}
 .theme-light body .container main .experience__container__description__title span:nth-child(2) {
   color: rgb(106, 106, 106);
 }
 .theme-dark body .container main .experience__container__description__title span:nth-child(2) {
   color: rgb(143, 143, 143);
+}
+body .container main .experience__container__description__title span {
+  margin-right: 5px;
 }
 body .container main .experience__container__description__subtitle {
   margin-top: 10px;
@@ -732,10 +738,11 @@ body .container main .projects__container__item__description__links {
 }
 body .container main .projects__container__item__description__links a {
   text-decoration: none;
+  margin: 0px 20px;
 }
 body .container main .projects__container__item__description__links a button {
   height: 40px;
-  width: 150px;
+  width: 100px;
   font-size: 1rem;
   font-family: "Epilogue", sans-serif;
   cursor: pointer;
@@ -744,12 +751,16 @@ body .container main .projects__container__item__description__links a button {
   align-items: center;
   justify-content: space-around;
   transition: width 0.2s ease;
+  overflow: hidden;
 }
 .theme-light body .container main .projects__container__item__description__links a button {
   background-color: rgb(106, 106, 106);
 }
 .theme-dark body .container main .projects__container__item__description__links a button {
   background-color: rgb(143, 143, 143);
+}
+body .container main .projects__container__item__description__links a button div {
+  text-align: center;
 }
 .theme-light body .container main .projects__container__item__description__links a button div {
   color: rgb(237, 237, 237);
@@ -758,7 +769,7 @@ body .container main .projects__container__item__description__links a button {
   color: rgb(23, 23, 23);
 }
 body .container main .projects__container__item__description__links a button div:nth-child(1) {
-  min-width: 150px;
+  min-width: 90px;
 }
 @media screen and (max-width: 450px) {
   body .container main .projects__container__item__description__links a button div:nth-child(1) {
@@ -794,7 +805,7 @@ body .container main .projects__container__item__description__links a button .li
   }
 }
 body .container main .projects__container__item__description__links a button:hover {
-  width: 200px;
+  width: 130px;
   transition: width 0.2s ease;
 }
 @media screen and (max-width: 450px) {
@@ -872,6 +883,9 @@ body .container main .projects__container__item:last-child {
     padding: 100px 0px;
   }
 }
+body .container main .contact {
+  scroll-margin-top: 100px;
+}
 body .container main .contact__container {
   margin-top: 50px;
   display: flex;
@@ -896,6 +910,9 @@ body .container main .contact__container__btn button {
   width: 120px;
   border: 0px;
   font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .theme-light body .container main .contact__container__btn button {
   background-color: rgb(106, 106, 106);
